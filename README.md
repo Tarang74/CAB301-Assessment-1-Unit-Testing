@@ -8,7 +8,11 @@ Your application must use the .NET 7.0 framework to be compatible with the MSTes
 
 ## Getting Started
 
-Start by cloning this repository into the parent repository of your project, then add a reference to your project by navigating to `Dependencies > Add Project Reference...`.
+1. Start by cloning this repository into the parent repository of your project.
+2. Right-click your solution, then click `Add > Existing Project...`.
+3. Then add a reference to the `UnitTesting` project by navigating to `Dependencies > Add Project Reference...`.
+
+   Note this should be done in the `UnitTesting` project, not your own project.
 
 To begin testing, build your application, and click `Run All Tests` in the `Test Explorer`.
 
