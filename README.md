@@ -14,14 +14,6 @@ Your application must use the .NET 7.0 framework to be compatible with the MSTes
 
    Note this should be done in the `UnitTesting` project, not your own project.
 
-4. Create a `Usings.cs` file to the `UnitTesting` project to add a `global using` to your assessment project.
-
-   ```cs
-   global using <namespace>;
-   ```
-
-   This file is ignored by git.
-
 To begin testing, build your application, and click `Run All Tests` in the `Test Explorer`.
 
 ## Adding to this repository

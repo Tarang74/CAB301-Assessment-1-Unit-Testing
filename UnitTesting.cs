@@ -1,7 +1,4 @@
-﻿using System.Net.NetworkInformation;
-using System.Runtime.ExceptionServices;
-
-namespace UnitTesting
+﻿namespace UnitTesting
 {
     public class UnitTesting
     {
