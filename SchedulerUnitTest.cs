@@ -39,7 +39,7 @@ namespace UnitTesting
 
             IJob[] actual = scheduler.ShortestJobFirst();
 
-            Assert.IsTrue(Enumerable.SequenceEqual(expected, actual), "ShortestJobFirst failed to sort Jobs by executionTime.");
+            Assert.IsTrue(UnitTesting.JobArrayEqual(expected, actual), "ShortestJobFirst failed to sort Jobs by executionTime.");
         }
 
         [TestMethod]
@@ -76,7 +76,7 @@ namespace UnitTesting
 
             IJob[] actual = scheduler.Priority();
 
-            Assert.IsTrue(Enumerable.SequenceEqual(expected, actual), "Priority failed to sort Jobs by priority.");
+            Assert.IsTrue(UnitTesting.JobArrayEqual(expected, actual), "Priority failed to sort Jobs by priority.");
         }
 
         [TestMethod]
@@ -113,7 +113,7 @@ namespace UnitTesting
 
             IJob[] actual = scheduler.FirstComeFirstServed();
 
-            Assert.IsTrue(Enumerable.SequenceEqual(expected, actual), "FirstComeFirstServed failed to sort Jobs by timeReceived.");
+            Assert.IsTrue(UnitTesting.JobArrayEqual(expected, actual), "FirstComeFirstServed failed to sort Jobs by timeReceived.");
         }
     }
 }
